@@ -1,0 +1,12 @@
+{
+  "eslint.format.enable": true,
+  //每次保存自动格式化
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    // 每次保存的时候将代码按eslint格式进行修复
+    "source.fixAll.eslint": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
