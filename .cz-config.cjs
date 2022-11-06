@@ -4,7 +4,7 @@ module.exports = {
   types: [
     { value: '✨ feat', name: '✨ feat    : 增加新的特性' },
     { value: '🐞 fix', name: '🐞 fix     : 修复 bug' },
-    { value: '🎈 perf', name: '🎈 perf    : 提高性能的代码更改' },
+    { value: '⚡ perf', name: '⚡ perf    : 提高性能的代码更改' },
     {
       value: '🌈 style',
       name: '🌈 style   : 不影响代码含义的修改，比如空格、格式化、缺失的分号等'
@@ -20,7 +20,7 @@ module.exports = {
       name: '🔄 revert  : 当前 commit 用于撤销以前的 commit，后面跟着被撤销 Commit 的 Header'
     },
     { value: '⚙️ wip', name: '⚙️ wip      : 开发中' },
-    { value: '🪢 workflow', name: '🪢  workflow : 工作流修改' },
+    { value: '🗃️ workflow', name: '🗃️  workflow : 工作流修改' },
     { value: '📦 types', name: '📦 types   : 类型修改' },
     { value: '🪧 release', name: '🪧  release  : 发布新版本' }
   ],
