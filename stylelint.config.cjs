@@ -83,5 +83,34 @@ module.exports = {
     ]
   },
   // ↓忽略检查的文件
-  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts']
+  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts'],
+  overrides: [
+    {
+      files: ['*.vue', '**/*.vue', '*.html', '**/*.html'],
+      customSyntax: 'postcss-html',
+      extends: ['stylelint-config-recommended'],
+      rules: {
+        'keyframes-name-pattern': null,
+        'selector-pseudo-class-no-unknown': [
+          true,
+          {
+            // 忽略伪类
+            ignorePseudoClasses: ['deep', 'global']
+          }
+        ],
+        'selector-pseudo-element-no-unknown': [
+          true,
+          {
+            // 忽略伪元素
+            ignorePseudoElements: ['v-deep', 'v-global', 'v-slotted']
+          }
+        ]
+      }
+    },
+    {
+      files: ['*.less', '**/*.less'],
+      customSyntax: 'postcss-less',
+      extends: ['stylelint-config-standard', 'stylelint-config-recommended-vue']
+    }
+  ]
 }
