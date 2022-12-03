@@ -3,6 +3,7 @@ import type { GlobConfig } from '#/config'
 import { warn } from '@/utils/log'
 import { getAppEnvConfig } from '@/utils/env'
 
+/** env 文件中的全局配置 */
 export const useGlobSetting = (): Readonly<GlobConfig> => {
   const {
     VITE_GLOB_APP_TITLE,

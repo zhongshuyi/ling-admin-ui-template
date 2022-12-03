@@ -12,7 +12,7 @@ export default defineConfig(({ command, mode }) => {
   // 当前Node.js进程执行时的工作目录
   const root = process.cwd()
 
-  /**获取环境变量 */
+  /**获取当前环境下的环境变量 */
   const env = loadEnv(mode, root)
   /**判断是否是生产环境，生产环境下 command 为 build ，在开发环境下 command 的值为 serve*/
   const isBuild = command === 'build'

@@ -18,11 +18,16 @@
     "release": "release-it --no-npm"
   },
   "dependencies": {
+    "axios": "^1.2.0",
+    "lodash-es": "^4.17.21",
+    "qs": "^6.11.0",
     "vue": "^3.2.41"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@types/fs-extra": "^9.0.13",
+    "@types/lodash-es": "^4.17.6",
+    "@types/qs": "^6.9.7",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
     "@vitejs/plugin-vue": "^3.2.0",

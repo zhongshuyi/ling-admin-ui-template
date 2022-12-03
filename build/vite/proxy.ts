@@ -4,7 +4,7 @@
  */
 import type { ProxyOptions } from 'vite'
 /**
- * 每一项
+ * 代理对象
  */
 type ProxyItem = [string, string]
 /**

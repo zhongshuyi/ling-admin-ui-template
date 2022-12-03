@@ -4,11 +4,12 @@ import vue from '@vitejs/plugin-vue'
 
 import { configHtmlPlugin } from './html'
 
-export function createVitePlugins(_viteEnv: ViteEnv, _isBuild: boolean) {
+export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
   /** 插件数组 */
   const vitePlugins: (PluginOption | PluginOption[])[] = [vue()]
 
-  vitePlugins.push(configHtmlPlugin())
+  // vite-plugin-html
+  vitePlugins.push(configHtmlPlugin(viteEnv, isBuild))
 
   return vitePlugins
 }
