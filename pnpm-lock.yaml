@@ -28,6 +28,7 @@ specifiers:
   jest: ^29.2.2
   lint-staged: ^13.0.3
   lodash-es: ^4.17.21
+  pinia: ^2.0.27
   postcss: ^8.4.19
   postcss-html: ^1.5.0
   postcss-less: ^6.0.0
@@ -51,6 +52,7 @@ specifiers:
 dependencies:
   axios: registry.npmmirror.com/axios/1.2.0
   lodash-es: registry.npmmirror.com/lodash-es/4.17.21
+  pinia: registry.npmmirror.com/pinia/2.0.27_l7r24p6nevbtlimqmqcwa3ouhu
   qs: registry.npmmirror.com/qs/6.11.0
   vue: registry.npmmirror.com/vue/3.2.41
 
@@ -2703,6 +2705,17 @@ packages:
     dependencies:
       '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom/3.2.41
       '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.41
+
+  registry.npmmirror.com/@vue/devtools-api/6.4.5:
+    resolution:
+      {
+        integrity: sha512-JD5fcdIuFxU4fQyXUu3w2KpAJHzTVdN+p4iOX2lMWSHMOoQdMAcpFLZzm9Z/2nmsoZ1a96QEhZ26e50xLBsgOQ==,
+        registry: http://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.4.5.tgz
+      }
+    name: '@vue/devtools-api'
+    version: 6.4.5
+    dev: false
 
   registry.npmmirror.com/@vue/reactivity-transform/3.2.41:
     resolution:
@@ -11638,6 +11651,32 @@ packages:
     engines: { node: '>=4' }
     dev: true
 
+  registry.npmmirror.com/pinia/2.0.27_l7r24p6nevbtlimqmqcwa3ouhu:
+    resolution:
+      {
+        integrity: sha512-nOnXP0OFeL8R4WjAHsterU+11vptda643gH02xKNtSCDPiRzVfRYodOLihLDoa0gL1KKuQKV+KOzEgdt3YvqEw==,
+        registry: http://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/pinia/-/pinia-2.0.27.tgz
+      }
+    id: registry.npmmirror.com/pinia/2.0.27
+    name: pinia
+    version: 2.0.27
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': registry.npmmirror.com/@vue/devtools-api/6.4.5
+      typescript: registry.npmmirror.com/typescript/4.8.4
+      vue: registry.npmmirror.com/vue/3.2.41
+      vue-demi: registry.npmmirror.com/vue-demi/0.13.11_vue@3.2.41
+    dev: false
+
   registry.npmmirror.com/pirates/4.0.5:
     resolution:
       {
@@ -14224,7 +14263,6 @@ packages:
     version: 4.8.4
     engines: { node: '>=4.2.0' }
     hasBin: true
-    dev: true
 
   registry.npmmirror.com/uglify-js/3.17.4:
     resolution:
@@ -14559,6 +14597,29 @@ packages:
       acorn: registry.npmmirror.com/acorn/8.8.1
       acorn-walk: registry.npmmirror.com/acorn-walk/8.2.0
     dev: true
+
+  registry.npmmirror.com/vue-demi/0.13.11_vue@3.2.41:
+    resolution:
+      {
+        integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==,
+        registry: http://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/vue-demi/-/vue-demi-0.13.11.tgz
+      }
+    id: registry.npmmirror.com/vue-demi/0.13.11
+    name: vue-demi
+    version: 0.13.11
+    engines: { node: '>=12' }
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      vue: registry.npmmirror.com/vue/3.2.41
+    dev: false
 
   registry.npmmirror.com/vue-eslint-parser/9.1.0_eslint@8.26.0:
     resolution:
