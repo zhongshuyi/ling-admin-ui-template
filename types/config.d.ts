@@ -1,3 +1,5 @@
+import { ThemeEnum } from '@/enums/appEnum'
+
 /**全局环境配置 */
 export interface GlobEnvConfig {
   /** 网站标题 */
@@ -20,4 +22,9 @@ export interface GlobConfig {
   urlPrefix?: string
   /**简称，用于配置文件名字 不要出现空格、数字开头等特殊字符 */
   shortName: string
+}
+
+export interface ProjectConfig {
+  /** 默认主题*/
+  defaultTheme: ThemeEnum
 }
