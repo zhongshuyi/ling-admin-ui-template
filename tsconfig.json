@@ -56,7 +56,8 @@
     "src/**/*.vue",
     "types/**/*.d.ts",
     "types/**/*.ts",
-    "build/**/*.ts"
+    "build/**/*.ts",
+    "types/auto-imports.d.tss.d.ts"
   ],
   // 指定一个排除列表（include的反向操作）
   "exclude": ["node_modules", "dist", "**/*.js"]
