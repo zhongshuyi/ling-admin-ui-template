@@ -8,16 +8,20 @@ interface AppState {
 
 export const useAppStore = defineStore({
   id: 'app',
+  persist: {
+    key: 'pinia-store-app',
+    storage: localStorage
+  },
   state: (): AppState => ({
     theme: undefined
   }),
   getters: {
     /**
-     * 获取主题，获取顺序：store -> localStorage -> defaultSetting
+     * 获取主题
      * @returns 主题
      */
     getTheme(): ThemeEnum | string {
-      return this.theme || localStorage.getItem(APP_DARK_MODE_KEY_) || setting.defaultTheme
+      return this.theme || setting.defaultTheme
     },
     /** 获取当前宽度是否属于移动端 */
     getIsMobile(): Ref<boolean> {
@@ -29,7 +33,6 @@ export const useAppStore = defineStore({
     setTheme(mode: ThemeEnum | string): void {
       console.log(mode)
       this.theme = mode
-      localStorage.setItem(APP_DARK_MODE_KEY_, mode)
       const isDark = useDark()
       switch (mode) {
         case ThemeEnum.SYSTEM:

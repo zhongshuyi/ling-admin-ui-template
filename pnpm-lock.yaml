@@ -34,6 +34,7 @@ specifiers:
   lint-staged: ^13.1.0
   lodash-es: ^4.17.21
   pinia: ^2.0.28
+  pinia-plugin-persistedstate: ^3.0.1
   postcss: ^8.4.19
   postcss-html: ^1.5.0
   postcss-less: ^6.0.0
@@ -67,6 +68,7 @@ dependencies:
   axios: registry.npmmirror.com/axios/1.2.1
   lodash-es: registry.npmmirror.com/lodash-es/4.17.21
   pinia: registry.npmmirror.com/pinia/2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
+  pinia-plugin-persistedstate: registry.npmmirror.com/pinia-plugin-persistedstate/3.0.1_pinia@2.0.28
   qs: registry.npmmirror.com/qs/6.11.0
   vue: registry.npmmirror.com/vue/3.2.45
   vue-router: registry.npmmirror.com/vue-router/4.1.6_vue@3.2.45
@@ -13613,6 +13615,22 @@ packages:
     engines: { node: '>=6' }
     dev: true
     optional: true
+
+  registry.npmmirror.com/pinia-plugin-persistedstate/3.0.1_pinia@2.0.28:
+    resolution:
+      {
+        integrity: sha512-WRNWtR4v8StJqBQH+Qiz88SGnlr4wvEyh7wtA+fYEVLoIOnpZ0v4FICvUcC8eUkAIvQL3n6/Ew2yryw7okazvA==,
+        registry: http://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/pinia-plugin-persistedstate/-/pinia-plugin-persistedstate-3.0.1.tgz
+      }
+    id: registry.npmmirror.com/pinia-plugin-persistedstate/3.0.1
+    name: pinia-plugin-persistedstate
+    version: 3.0.1
+    peerDependencies:
+      pinia: ^2.0.0
+    dependencies:
+      pinia: registry.npmmirror.com/pinia/2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
+    dev: false
 
   registry.npmmirror.com/pinia/2.0.28_prq2uz4lho2pwp6irk4cfkrxwu:
     resolution:
