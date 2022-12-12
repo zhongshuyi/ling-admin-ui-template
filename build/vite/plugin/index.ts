@@ -2,11 +2,13 @@ import { PluginOption } from 'vite'
 
 import vue from '@vitejs/plugin-vue'
 import WindiCSS from 'vite-plugin-windicss'
+import purgeIcons from 'vite-plugin-purge-icons'
 
 import { configHtmlPlugin } from './html'
 
 import { configComponentsPlugin } from './components'
 import { autoImportPlugin } from './autoImport'
+import { configSvgIconsPlugin } from './svgSprite'
 
 export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
   /** 插件数组 */
@@ -23,6 +25,12 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
 
   // vite-plugin-html
   vitePlugins.push(configHtmlPlugin(viteEnv, isBuild))
+
+  // vite-plugin-purge-icons
+  vitePlugins.push(purgeIcons())
+
+  // vite-plugin-svg-icons
+  vitePlugins.push(configSvgIconsPlugin(isBuild))
 
   return vitePlugins
 }

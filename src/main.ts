@@ -6,6 +6,9 @@ import '@/design/index.less'
 import { initAppConfigStore } from './logics/initAppConfig'
 import { setupRouter } from './router'
 
+import '@purge-icons/generated'
+import 'virtual:svg-icons-register'
+
 const app = createApp(App)
 
 // 配置 store，如果不需要Vue devtools支持、SSR支持则不需要配置
